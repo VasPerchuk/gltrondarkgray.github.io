@@ -1,0 +1,29 @@
+# Footer navigation links
+
+- title: Demo Site
+  url: https://gltrondarkgray.github.io
+
+- title: Workshops
+  url: /workshops/
+  excerpt: "Workshops"
+  image:
+
+- title: Demos
+  url: /demos/
+  excerpt: "Demos"
+  image:
+
+- title: Labs
+  url: /labs/
+  excerpt: "Labs"
+  image:
+
+- title: Guides
+  url: /guides/
+  excerpt: "Demos"
+  image:
+
+- title: Videos
+  url: /videos/
+  excerpt: "Blog Posts"
+  image:

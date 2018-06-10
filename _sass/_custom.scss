@@ -1,0 +1,56 @@
+/* Custom styles */
+.custom-notice {
+	position: relative;
+	padding: 1em;
+	color: $white;
+	background-color: #ffb900;
+	text-align: center;
+	border-radius: 0px;
+	a {
+		color: $white;
+		border-bottom: 1px dotted $white;
+	}
+}
+
+.site-title-custom {
+	@include row;
+	@include media($large) {
+		@include span-columns(4);
+	}
+	padding: (.25 * $masthead-height) 0; // fourth the height to center vertically
+	height: $masthead-height;
+	text-decoration: none;
+	color: $black;
+	font-family: $alt-font;
+	font-weight: 700;
+	@include font-size(20,no);
+	line-height: .5 * $masthead-height; // half the height to center vertically
+}
+
+.top-menu-custom {
+	display: none;
+	position: relative;
+	@include media($medium) {
+		@include span-columns(12);
+	}
+	@include media($large) {
+		@include span-columns(7);
+		ul {
+			position: absolute;
+			right: 0;
+		}
+	}
+	.home,
+	.sub-menu-item {
+		display: none;
+	}
+	li {
+		a {
+			font-weight: 700;
+			@include font-size(16,no);
+			line-height: .5 * $masthead-height; // half the height to center vertically
+			color: $black;
+		}
+	}
+}
+

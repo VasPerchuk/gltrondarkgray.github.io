@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}</title>
+    {% if page.excerpt %}<meta name="description" content="{{ page.excerpt | strip_html }}">{% endif %}
+    {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
+    {% if page.author %}
+      {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %}
+    {% endif %}
+    {% include open-graph.html %}
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+
+    <link href="{{ site.url }}/atom.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Atom Feed">
+    <link href="{{ site.url }}/sitemap.xml" type="application/xml" rel="sitemap" title="Sitemap">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cleartype" content="on">
+
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/main.css">
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.6.0/css/fabric.min.css">
+    <!-- HTML5 Shiv and Media Query Support for IE -->
+    <!--[if lt IE 9]>
+      <script src="{{ site.url }}/js/vendor/html5shiv.min.js"></script>
+      <script src="{{ site.url }}/js/vendor/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/slick/slick-theme.css"/>
+
+    <script>
+      var appInsights=window.appInsights||function(config){
+      function i(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s="AuthenticatedUserContext",h="start",c="stop",l="Track",a=l+"Event",v=l+"Page",y=u.createElement(o),r,f;y.src=config.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js";u.getElementsByTagName(o)[0].parentNode.appendChild(y);try{t.cookie=u.cookie}catch(p){}for(t.queue=[],t.version="1.0",r=["Event","Exception","Metric","PageView","Trace","Dependency"];r.length;)i("track"+r.pop());return i("set"+s),i("clear"+s),i(h+a),i(c+a),i(h+v),i(c+v),i("flush"),config.disableExceptionTracking||(r="onerror",i("_"+r),f=e[r],e[r]=function(config,i,u,e,o){var s=f&&f(config,i,u,e,o);return s!==!0&&t["_"+r](config,i,u,e,o),s}),t
+      }({
+          instrumentationKey:""
+      });
+        
+      window.appInsights=appInsights;
+      appInsights.trackPageView();
+    </script>
+  </head>
+
+  <body class="ms-Fabric" id="js-body"> 
+    <div class="ms-Grid">
+      {% include browser-upgrade.html %}
+      {% include header.html %}
+      {% include navigation-sliding.html %}
+
+      <div class="ms-Grid-row"><!--id="page-wrapper"-->
+        {{ content }}
+        <div id="root1"></div>
+        {% include footer.html %}
+      </div>
+
+      <script src="{{ site.url }}/assets/js/vendor/jquery-1.9.1.min.js"></script>
+      <script src="{{ site.url }}/assets/js/main.js"></script>
+      <script type="text/javascript" src="{{ site.url }}/assets/js/bundle.js" charset="utf-8"></script>
+      <!--script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script-->
+      <script type="text/javascript" src="{{ site.url }}/assets/slick/slick.min.js"></script>
+
+      <script>
+        $(document).ready(function () {
+          $('.carousel').slick({
+            autoplay: true,
+            autoplaySpeed: 5500,
+            arrows: true,
+            dots: true
+          });
+        });
+      </script>
+    </div>
+  </body>
+
+</html>

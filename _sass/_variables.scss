@@ -1,0 +1,144 @@
+/* ==========================================================================
+   SCSS Variables
+   ========================================================================== */
+
+/*
+   Typography variables
+   ========================================================================== */
+
+//$base-font                   	: Georgia,Times,"Times New Roman",serif;
+$base-font                   	: "Segoe UI Light","Segoe UI",sans-serif;
+$heading-font                	: "Segoe UI Light","Segoe UI",sans-serif;
+$caption-font                	: $base-font;
+$code-font                   	: "Leelawadee UI",monospace;
+$alt-font                    	: $heading-font;
+
+$doc-font-size               	: 16;
+$doc-line-height             	: 20;
+
+$border-radius               	: 3px;
+
+/*
+   Color variables
+   ========================================================================== */
+
+$themePrimaryColor: "[theme: themePrimary, default: #0078d4]";
+$themeLighterAltColor: "[theme: themeLighterAlt, default: #eff6fc]";
+$themeLighterColor: "[theme: themeLighter, default: #deecf9]";
+$themeLightColor: "[theme: themeLight, default: #c7e0f4]";
+$themeTertiaryColor: "[theme: themeTertiary, default: #71afe5]";
+$themeSecondaryColor: "[theme: themeSecondary, default: #2b88d8]";
+$themeDarkAltColor: "[theme: themeDarkAlt, default: #106ebe]";
+$themeDarkColor: "[theme: themeDark, default: #005a9e]";
+$themeDarkerColor: "[theme: themeDarker, default: #004578]";
+$neutralLighterAltColor: "[theme: neutralLighterAlt, default: #f8f8f8]";
+$neutralLighterColor: "[theme: neutralLighter, default: #f4f4f4]";
+$neutralLightColor: "[theme: neutralLight, default: #eaeaea]";
+$neutralQuaternaryAltColor: "[theme: neutralQuaternaryAlt, default: #dadada]";
+$neutralQuaternaryColor: "[theme: neutralQuaternary, default: #d0d0d0]";
+$neutralTertiaryAltColor: "[theme: neutralTertiaryAlt, default: #c8c8c8]";
+$neutralTertiaryColor: "[theme: neutralTertiary, default: #c2c2c2]";
+$neutralSecondaryColor: "[theme: neutralSecondary, default: #858585]";
+$neutralPrimaryAltColor: "[theme: neutralPrimaryAlt, default: #4b4b4b]";
+$neutralPrimaryColor: "[theme: neutralPrimary, default: #333]";
+$neutralDarkColor: "[theme: neutralDark, default: #272727]";
+$blackColor: "[theme: black, default: #1d1d1d]";
+$whiteColor: "[theme: white, default: #fff]";
+$primaryBackgroundColor: "[theme: primaryBackground, default: #fff]";
+$primaryTextColor: "[theme: primaryText, default: #333]";
+$bodyBackgroundColor: "[theme: bodyBackground, default: #fff]";
+$bodyTextColor: "[theme: bodyText, default: rgba(51,51,51,100)]";
+$disabledBackgroundColor: "[theme: disabledBackground, default: #f4f4f4]";
+$disabledTextColor: "[theme: disabledText, default: #c8c8c8]";
+
+$white                          : #fff;
+$black                          : #1d1d1d;
+$slate                          : $neutralPrimaryAltColor;
+
+$body-color                  	: $white;
+
+$text-color                  	: rgba(51,51,51,100); //bodyTextColor 
+$caption-color                  : mix($white, $text-color, 25%);
+
+$code-color                    : #D8DEE9; // $nord4
+$code-background-color          : #2E3440; // $nord0
+
+$base-color                  	: rgba(0,120,212,100); //themePrimaryColor
+$comp-color                  	: complement($base-color);
+$border-color                	: #005a9e; //themeDarkColor
+$link-color                  	: darken(#5E81AC, 1);
+
+$primary-color               	: $black;
+$success-color               	: #bad80a; 
+$warning-color               	: #ffb900;
+$danger-color                	: #a80000; 
+$info-color                  	: #00bcf2; 
+
+$table-border-color          	: $border-color;
+$table-border                	: 1px solid $table-border-color;
+$table-background            	: darken($body-color, 1);
+$table-header-color          	: darken($body-color, 2);
+$table-hover-color           	: darken($table-background, 2);
+$table-stripe-color          	: darken($table-background, 4);
+$table-stripe-color-hover    	: darken($table-stripe-color, 3);
+
+$facebook-color					      : #3b5998;
+$flickr-color					        : #ff0084;
+$foursquare-color				      : #0cbadf;
+$google-plus-color				    : #dd4b39;
+$instagram-color				      : #4e433c;
+$linkedin-color					      : #4875b4;
+$pinterest-color				      : #cb2027;
+$rss-color						        : #fa9b39;
+$tumblr-color					        : #2c4762;
+$twitter-color					      : #55acee;
+$vimeo-color					        : #1ab7ea;
+$youtube-color		            : #ff3333;
+
+
+/*
+   Form variables
+   ========================================================================== */
+
+$form-border-color           	: $border-color;
+$form-border-color-hover     	: darken($border-color, 10);
+$form-border-color-focus     	: $primary-color;
+$form-border-radius          	: $border-radius;
+$form-box-shadow             	: inset 0 1px 3px hsla(0, 0%, 0%, 0.06);
+$form-box-shadow-focus       	: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
+$form-font-family            	: $base-font;
+$form-font-size              	: $doc-font-size;
+
+
+/*
+   Sliding menu navigation variables
+   ========================================================================== */
+
+$sliding-menu-border-color	 	 : #333;
+$sliding-menu-background 		   : $white;
+$sliding-menu-color 	 		     : #333;
+$sliding-menu-background-hover : $white;
+$sliding-menu-color-hover	 	   : $white;
+$sliding-menu-border   			   : 1px solid $sliding-menu-border-color;
+$button-size		         	     : 30px;
+$transition						         : 0.3s; // increase this to see the transformations in slow-motion
+$sliding-menu-animation        : all 500ms cubic-bezier(.86,.01,.77,.78);
+
+/*
+   Badge variables
+   ========================================================================== */
+
+$badge-background              : $primary-color;
+$badge-dark-color              : $black;
+$badge-danger-color            : $danger-color;
+$badge-info-color              : $info-color;
+$badge-warning-color           : $warning-color;
+$badge-success-color           : $success-color;
+$badge-font-color              : $white;
+
+
+/*
+   Masthead variables
+   ========================================================================== */
+
+$masthead-height: $button-size * 2;
