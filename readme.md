@@ -1,4 +1,4 @@
-![banner](src/assets/images/m365-banner.jpg)
+![banner](/assets/images/m365-banner.jpg)
 
 # Demo Site
 This is the Github repo for the site, which is based on Jekyll and the [Skinny Bones](https://github.com/mmistakes/skinny-bones-jekyll) theme and [Azure Citadel](https://azurecitadel.github.io). Do not link to this page but to the published site!
