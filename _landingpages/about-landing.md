@@ -14,9 +14,9 @@ title: "About site"
 <a aria-label="Microsoft" href="https://www.microsoft.com">
                         <img class="microsoft-logo" alt="Microsoft" src="https://assets.onestore.ms/cdnfiles/external/uhf/long/9a49a7e9d8e881327e81b9eb43dabc01de70a9bb/images/microsoft-gray.png"/></a>
 
-The content on this site is created and maintained by members of the **Cloud Solution Architect community** at Microsoft UK.
+The content on this site is created and maintained by members of the **Partner Technical Architect community** at Microsoft UK.
 
-The main objective of this site is to provide resources to support Microsoft Partners who are either looking for both introductory and deep technical information on [Microsoft Azure](https://azure.microsoft.com), or are looking to gain hands-on experience of using Azure capabilities. 
+The main objective of this site is to provide resources to support Microsoft Partners who are either looking for both introductory and deep technical information on [Microsoft Docs](https://docs.microsoft.com), or are looking to gain hands-on experience of using Azure capabilities. 
 
 On the site you can find:
 
